@@ -99,3 +99,28 @@ class Program
         }
     }
 }
+Exercício 16 -
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        {
+            int[] numeros = new int[10];
+            int[] numerosmultiplicados = new int[10];
+            for(int i = 0; i < numeros.Length; i++)
+            {
+                Console.WriteLine("digite o {0}° número", i+1);
+                numeros[i] = int.Parse(Console.ReadLine());
+                numerosmultiplicados[i] = numeros[i]*5;
+            }
+            Console.WriteLine("Número Normal\t\tMúltiplicado por 5");
+            for(int i = 0; i < numeros.Length; i++)
+            {
+                Console.WriteLine("{0}\t\t\t{1}",numeros[i], numerosmultiplicados[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
