@@ -124,3 +124,26 @@ class Program
         }
     }
 }
+Exercício 20 - 
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        {
+            double Reais;
+            double Dolares;
+            double Euros;
+            Console.WriteLine("Digite um valor em reais:");
+            Reais = double.Parse(Console.ReadLine());
+            Console.WriteLine("Qual a cotação do Dólar?(quanto vale 1 real em dolar)");
+            Dolares = double.Parse(Console.ReadLine());
+            Console.WriteLine("Qual a cotação do Euro?(quanto vale 1 real em euro)");
+            Euros = double.Parse(Console.ReadLine());
+            Console.WriteLine("Valor em R$\tValor em US$\tValor em EU$");
+            Console.WriteLine("{0:N2}\t\t{1:N2}\t\t{2:N2}", Reais, (Reais * Dolares), (Reais * Euros));
+            Console.ReadKey();
+        }
+    }
+}
