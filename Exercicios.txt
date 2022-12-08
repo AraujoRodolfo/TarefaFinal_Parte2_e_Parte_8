@@ -64,5 +64,38 @@ class Program
         return Medias;
     }
 }
+Exercício 15 -
 
+using System;
+using System.Linq;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        string[] nome = new string[5];
+        for (int i = 0; i < nome.Length; i++)
+        {
+            Console.WriteLine("Digita ai o {0}° nome patrão:", i+1);
+            nome[i] = Console.ReadLine();
+            
+        }
+        Console.WriteLine("Lista de nomes");
+        for (int i = 0; i < nome.Length; i++)
+        {
+            Console.WriteLine(nome[i]);
+        }
+        Console.ReadKey();
+        Console.WriteLine("Lista de nomes invertidos");
+        for (int i = 0; i < nome.Length; i++)
+        {
+            Console.WriteLine(InverterNome(nome[i]));
+        }
+        Console.ReadKey();
+        static string InverterNome(string nome)
+        {
+            return string.Join("", nome.Reverse());
+            Console.ReadKey();
+        }
+    }
+}
