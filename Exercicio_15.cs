@@ -16,6 +16,7 @@ class Program
         }
         Array.Reverse(n1);
         Inversa(n1);
+        Console.ReadKey();
     }
     static void Inversa(string[] nome1)
     {

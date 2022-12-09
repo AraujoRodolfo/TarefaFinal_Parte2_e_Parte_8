@@ -15,5 +15,7 @@ class Program
         {
             Console.WriteLine("{0}° número : {1}  x5: {2}", i + 1, n1[i], n1[i] * 5);
         }
+        Console.ReadKey();
+
     }
 }
